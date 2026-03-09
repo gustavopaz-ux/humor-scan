@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Detector de Humor</title>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=
+    DM+Mono:ital,wght@0,300;0,400;1,300&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="cursor"></div>
+    <canvas id="tela-particulas"></canvas>
+    <main>
+      <!-- TELA INICIAL -->
+      <div class="tela ativa" id="tela-inicio">
+        <div class="inicial-etiqueta animar">
+          // sistema de análise emocional
+        </div>
+        <h1 class="inicial-titulo animar animar-d1">
+          HUMOR<br /><span>SCAN</span>
+        </h1>
+        <div class="inicial-subtitulo animar animar-d2">
+          responda 5 perguntas e descubra seu estado interior
+        </div>
+        <div class="separador animar animar-d3"></div>
+        <button class="botao animar animar-d4" onclick="iniciarQuiz()">
+          INICIAR ANÁLISE
+        </button>
+      </div>
+
+      <!-- TELA DO QUIZ -->
+      <div class="tela" id="tela-quiz">
+        <div class="barra-progresso">
+          <div class="barra-preenchimento" id="progresso"></div>
+        </div>
+        <div class="etapa-pergunta" id="etapa-atual">PERGUNTA 1 / 5</div>
+        <div class="texto-pergunta" id="texto-pergunta"></div>
+        <div class="grade-opcoes" id="grade-opcoes"></div>
+      </div>
+
+      <!-- TELA DE ANÁLISE -->
+      <div class="tela" id="tela-analise">
+        <div class="anel-analise"></div>
+        <div class="texto-analise">ANALISANDO</div>
+        <div class="subtexto-analise">processando seu universo interior...</div>
+      </div>
+
+      <!-- TELA DE RESULTADO -->
+      <div class="tela" id="tela-resultado">
+        <div class="resultado-container">
+          <div class="resultado-etiqueta animar">// humor detectado //</div>
+          <div class="resultado-humor animar animar-d1" id="nome-humor"></div>
+          <div
+            class="resultado-separador animar animar-d2"
+            id="linha-separadora"
+          ></div>
+          <div
+            class="resultado-frase animar animar-d3"
+            id="frase-resultado"
+          ></div>
+          <div
+            class="resultado-etiquetas animar animar-d4"
+            id="etiquetas-resultado"
+          ></div>
+          <button class="botao-voltar animar animar-d4" onclick="reiniciar()">
+            refazer análise
+          </button>
+        </div>
+      </div>
+    </main>
+
+    <script src="script.js" defer></script>
+  </body>
+</html>
