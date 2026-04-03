@@ -14,4 +14,3 @@ O *Humor Scan* é um quiz interativo que utiliza lógica de programação para r
 * Capacidade de criar interfaces interativas.
 * Organização de código e separação de responsabilidades (HTML/CSS/JS).
 * Resolução de problemas através de lógica de programação.
-*
